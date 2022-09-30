@@ -1,0 +1,17 @@
+<section>
+<h1>Search engine</h1>
+<div id="articles-section">
+  <%= render partial: '/shared/form' %>
+</div>
+<%= turbo_frame_tag "articles" do %>
+<% if articles.empty? %>
+ <div></div>
+<% else %>
+  <% articles.each do |article| %>
+    <ul class="article">
+      <li><%= article.title %></li>
+    </ul>
+  <% end %>
+<% end %>
+<% end %>
+</section>
