@@ -1,4 +1,5 @@
 <section class='headline-section'>
+  <span class='analytics-btn'><%= link_to 'Analytics -->', analytics_path, class: 'analytics-btn--link' %></span>
   <%= image_tag "search_icon.svg", height: 200 %>
   <%= render partial: '/shared/home', locals: { articles: @articles } %>
 </section>

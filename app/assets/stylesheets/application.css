@@ -32,3 +32,8 @@ body {
 ul {
     list-style-type: none;
 }
+
+.icon-sm {
+    height: 1.3rem;
+    padding: 0 1rem;
+}
