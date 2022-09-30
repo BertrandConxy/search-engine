@@ -4,9 +4,8 @@
 
 :root {
     --primary-color: #f7f8f7;
-    --secondary-color: #aebc7a;
-    --tertiary-color: #43aa13;
-    --color-black: #0000;
+    --secondary-color: #8cbf00;
+    --tertiary-color: #608202;
     --color-grey: #9d9d9d;
     --default-fs: 1.6rem;
 }
@@ -28,4 +27,8 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: var(--default-fs);
     position: relative;
+}
+
+ul {
+    list-style-type: none;
 }
