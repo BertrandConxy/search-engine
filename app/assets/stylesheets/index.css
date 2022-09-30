@@ -1,0 +1,7 @@
+@import url('search-input.css');
+.headline-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+

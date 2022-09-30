@@ -63,6 +63,9 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+# Get dummy data for use
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+# For string collelation
 gem 'fuzzy-string-match', '~> 0.9.7'
+
 
