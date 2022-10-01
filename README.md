@@ -103,7 +103,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Original design idea by [https://google.com](google search engine root page)
+- Original design idea by [Google](https://google.com)
 
 ## 📝 License
 
