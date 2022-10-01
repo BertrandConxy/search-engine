@@ -9,7 +9,7 @@
 ![image](https://user-images.githubusercontent.com/90222110/193413642-9449b304-4c6f-4812-938c-6e431c001840.png)
 
 ### Live Demo
-  [Demo](https://cspent.herokuapp.com/)
+  [Demo](https://hj-search.herokuapp.com/)
 
 # Built with
 - Ruby
