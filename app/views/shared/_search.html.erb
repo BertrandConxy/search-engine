@@ -1,5 +1,7 @@
-<% searches.each do |search, count| %>
-
-<li style="font-size: <%= 25 + count %>px"><%= search %></li>
-
+<% analytics.each do |query, count| %>
+<tr class='table__row'>
+    <td class='table__data'> <%= query %> </td>
+    <td class='table__data'> <%= count  %> </td>
+    <td class='table__data'>Money </td>
+</tr>
 <% end %>

@@ -7,10 +7,12 @@
     <th class='table__header'>Contact</th>
     <th class='table__header'>Country</th>
   </tr>
-  <tr class='table__row'>
-    <td class='table__data'>Alfreds Futterkiste</td>
-    <td class='table__data'>Maria Anders</td>
-    <td class='table__data'>Germany</td>
-  </tr>
+  <% @grouped_analytics.each_with_index do |analytics, index| %>
+<tr class='table__row'>  
+  <td class='table__data'> <%= analytics[0]  %> </td>
+  <td class='table__data'> <%= analytics[1] %> </td>
+  <td class='table__data'> man </td>
+</tr>
+  <% end %>
 </table>
 </section>
