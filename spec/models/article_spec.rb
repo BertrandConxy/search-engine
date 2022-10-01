@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 describe 'Articles', type: :model do
   title = Faker::Game.title
   text = Faker::Lorem.paragraph(sentence_count: 8)
@@ -41,6 +40,4 @@ describe 'Articles', type: :model do
     article7 = Article.new(title: long_text, body: text)
     expect(article7).to_not be_valid
   end
-
-
 end
