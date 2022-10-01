@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('analytics.css');
 @import url('index.css');
 
 :root {
     --primary-color: #f7f8f7;
     --secondary-color: #8cbf00;
     --tertiary-color: #608202;
-    --color-grey: #9d9d9d;
+    --color-grey: #e0e0e0;
     --default-fs: 1.6rem;
 }
 
@@ -103,9 +102,29 @@ ul {
   }
   
   .table__row:nth-child(even) {
-    background-color: rgb(219, 219, 219);
+    background-color: var(--color-grey);
   }
 
-  .table__row:hover {
-    background-color: var(--color-grey);
+  .table__row:hover:not(.table__row--heading) {
+    background-color: rgb(171, 171, 171);
+  }
+
+  .article {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .article__card {
+    margin-top: 10rem;
+    width: 50%;
+    height: fit-content;
+    border: 1px solid gray;
+    padding: 3rem 4rem;
+    box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 2.5rem;
+  }
+
+  .article__card--heading {
+    text-align: center;
   }

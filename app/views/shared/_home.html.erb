@@ -8,7 +8,7 @@
       <div class='queries'>
         <% articles.each do |article| %>
           <ul class="queries__list">
-            <li class='queries__list--item'><%= image_tag "search_small.svg", class: 'icon-sm' %><%= article %></li>
+              <li class='queries__list--item'> <a href='/articles/<%= article[1]%>' class='link'><%= image_tag "search_small.svg", class: 'icon-sm' %><%= article[0] %></a> </li>
           </ul>
         <% end %>
       </div>
