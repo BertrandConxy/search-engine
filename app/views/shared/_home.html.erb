@@ -8,9 +8,11 @@
       <div class='queries'>
         <% articles.each do |article| %>
           <ul class="queries__list">
-            <li class='queries__list--item'><%= image_tag "search_small.svg", class: 'icon-sm' %><%= article.title %></li>
+            <li class='queries__list--item'><%= image_tag "search_small.svg", class: 'icon-sm' %><%= article %></li>
           </ul>
         <% end %>
+      <% elsif response.status == 204 %>
+       <div>Not fou</div>
       </div>
     <% end %>
   <% end %>

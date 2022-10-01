@@ -6,9 +6,13 @@ class ArticlesController < ApplicationController
     end
     
     def search
-        articles = Article.where('title LIKE ?', "%#{params[:query]}%").first(10)
+      if params[:query].empty?
+        render(partial: '/shared/home', locals: { articles: [] })
+      else
+        articles = Article.title_search(params[:query])
         render(partial: '/shared/home', locals: { articles: articles })
        save_search(params[:query], session[:user_id])
+      end
     end
     
     private
