@@ -1,0 +1,28 @@
+@import url('search-input.css');
+.headline-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.queries {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-6.5rem);
+    padding-top: 6.5rem;
+    border-radius: 2.5rem;
+    z-index: -11;
+    box-shadow: 0.8rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.queries__list {
+    text-align: left;
+}
+
+.queries__list--item {
+    padding: .5rem 0;
+}
+
+.right {
+    right: 5%;
+}

@@ -1,0 +1,11 @@
+<div class='form-container'>
+  <%= form_with url: articles_search_path, method: :post, authenticity_token: false, data: { controller: "search", search_target: "form", turbo_frame: "articles" } do |form| %>
+    <%= image_tag "search_small.svg", class: 'form-container__input--icon' %>
+    <%= form.text_field :query,
+      placeholder: "Search Article...",
+      autocomplete: "off",
+      class: 'form-container__input',
+      data: { action: "input->search#search" }
+    %>
+  <% end %>
+</div>

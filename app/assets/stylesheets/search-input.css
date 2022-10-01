@@ -1,0 +1,38 @@
+.search {
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.search__heading {
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+.form-container {
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.form-container__input {
+    position: relative;
+    height: 5rem;
+    width: 100%;
+    border-radius: 2.5rem;
+    padding: 0 5rem;
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: none;
+    font-size: 1.8rem;
+}
+
+.form-container__input:focus {
+    box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.form-container__input--icon {
+    position: absolute;
+    height: 2.2rem;
+    z-index: 11;
+    margin: 1.4rem 1.5rem;
+}
