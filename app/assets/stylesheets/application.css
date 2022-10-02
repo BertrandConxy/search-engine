@@ -1,15 +1,130 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('index.css');
+
+:root {
+    --primary-color: #f7f8f7;
+    --secondary-color: #8cbf00;
+    --tertiary-color: #608202;
+    --color-grey: #e0e0e0;
+    --default-fs: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--default-fs);
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.icon-sm {
+    height: 1.3rem;
+    padding: 0 1rem;
+}
+
+.btn--link {
+    position: absolute;
+    top: 6%;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    overflow: hidden;
+    transition: all .4s;
+    backface-visibility: hidden;
+}
+
+.btn--link:hover {
+    transform: scale(1.2);
+}
+
+.btn--link:hover.btn--link::after {
+    transform: translateX(-30%);
+}
+
+.btn--link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: var(--tertiary-color);
+    bottom: 0;
+    left: 0;
+    z-index: -11;
+    transform: translateX(-100%);
+    transition: all .4s;
+}
+
+.left {
+    left: 6%;
+}
+
+.analytics-section {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.analytics-section__heading {
+    margin: 3rem 0;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 2rem 0;
+  }
+  
+  .table__data, .table__header {
+    border: 1px solid #000;
+    padding: 8px;
+  }
+
+  .table__header {
+    text-align: center;
+  }
+  
+  .table__row:nth-child(even) {
+    background-color: var(--color-grey);
+  }
+
+  .table__row:hover:not(.table__row--heading) {
+    background-color: rgb(171, 171, 171);
+  }
+
+  .article {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .article__card {
+    margin-top: 10rem;
+    width: 50%;
+    height: fit-content;
+    border: 1px solid gray;
+    padding: 3rem 4rem;
+    box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 2.5rem;
+  }
+
+  .article__card--heading {
+    text-align: center;
+  }
